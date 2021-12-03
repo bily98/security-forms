@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Forms.Test", "Security.Forms.Test\Security.Forms.Test.csproj", "{70B807D9-3917-4A4D-B75D-8468FD3603DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Forms", "Security.Forms\Security.Forms.csproj", "{5234A6B2-9A83-4958-975B-40876C7234F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70B807D9-3917-4A4D-B75D-8468FD3603DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B807D9-3917-4A4D-B75D-8468FD3603DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B807D9-3917-4A4D-B75D-8468FD3603DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B807D9-3917-4A4D-B75D-8468FD3603DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5234A6B2-9A83-4958-975B-40876C7234F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5234A6B2-9A83-4958-975B-40876C7234F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5234A6B2-9A83-4958-975B-40876C7234F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5234A6B2-9A83-4958-975B-40876C7234F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D9DB2AB-BEE3-49B5-8BC2-A6B4DF21BB9D}
+	EndGlobalSection
+EndGlobal
