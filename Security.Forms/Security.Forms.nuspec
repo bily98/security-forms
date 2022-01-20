@@ -2,15 +2,19 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>1.0.1</version>
     <title>$title$</title>
     <authors>$author$</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/bily98/security-forms</projectUrl>
     <description>$description$</description>
-    <releaseNotes>Contains a base Secure Classes.</releaseNotes>
+    <releaseNotes>The integration of safe classes was improved.</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>Secure Forms DevExpress</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7">
+      </group>
+    </dependencies>
   </metadata>
 </package>

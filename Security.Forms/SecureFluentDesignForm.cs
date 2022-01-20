@@ -1,11 +1,12 @@
-﻿using System;
+﻿using DevExpress.XtraBars.FluentDesignSystem;
+using System;
 using System.Collections.Generic;
 using System.Security.Principal;
 using System.Windows.Forms;
 
 namespace Security.Forms
 {
-    public partial class SecureFluentDesignForm : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    public class SecureFluentDesignForm : FluentDesignForm
     {
 		private enum CalledShowMethod
 		{
@@ -31,14 +32,9 @@ namespace Security.Forms
 		/// </summary>
 		public SecureFluentDesignForm()
         {
-			if (!DesignMode)
-			{
-				this.IsMainWindow = false;
-				this.ValidatedUserRoles = new List<string>();
-				this.UserCanOpenForm = false;
-			}
-
-			InitializeComponent();
+			this.IsMainWindow = false;
+			this.ValidatedUserRoles = new List<string>();
+			this.UserCanOpenForm = false;
 		}
 
 		/// <summary>
@@ -49,19 +45,14 @@ namespace Security.Forms
 		/// <param name="userPrincipal">The user principal</param>
 		public SecureFluentDesignForm(string[] roles, IPrincipal userPrincipal)
         {
-			if (!DesignMode)
-			{
-				this.IsMainWindow = false;
-				this.ValidatedUserRoles = new List<string>();
-				this._formRoles = new List<string>();
-				this._formRoles.AddRange(roles);
+			this.IsMainWindow = false;
+			this.ValidatedUserRoles = new List<string>();
+			this._formRoles = new List<string>();
+			this._formRoles.AddRange(roles);
 
-				this._formPrincipal = userPrincipal;
+			this._formPrincipal = userPrincipal;
 
-				ValidateUserRoles();
-			}
-
-			InitializeComponent();
+			ValidateUserRoles();
 		}
 
 		/// <summary>

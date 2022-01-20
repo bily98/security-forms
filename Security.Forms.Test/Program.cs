@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Principal;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Security.Forms.Test
@@ -22,7 +19,7 @@ namespace Security.Forms.Test
             IPrincipal userPrincipal = new GenericPrincipal(WindowsIdentity.GetCurrent(),
                 new string[] { "UserRole1", "UserRole3" });
 
-            Form1 mainForm = new Form1(userPrincipal);
+            MainForm mainForm = new MainForm(userPrincipal);
 
             // Set form to be main window in order to Exit the application.
             mainForm.IsMainWindow = true;
