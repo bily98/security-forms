@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SecureXtraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SecureFluentDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +65,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SecureXtraForm.resx">
+      <DependentUpon>SecureXtraForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SecureFluentDesignForm.resx">
       <DependentUpon>SecureFluentDesignForm.cs</DependentUpon>
     </EmbeddedResource>
